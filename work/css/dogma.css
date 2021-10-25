@@ -1,0 +1,75 @@
+:root
+{
+	--bgcolor:rgb(255,255,255);
+	--footer-bgcolor:rgb(100,110,110);
+	--txcolor:rgb(0,0,0);
+	--footer-txcolor:rgb(220,220,220);
+}
+/* どこからでもrootの中身を持ってこれる */
+@media(prefers-color-scheme:dark)
+{
+	:root
+	{
+		--bgcolor:rgb(0,16,16);
+		--footer-bgcolor:rgb(70,80,80);
+		--txcolor:rgb(220,220,230);
+		--footer-txcolor:rgb(220,220,220);
+	}
+}
+
+
+body
+{
+	margin:0;
+	background-color:var(--footer-bgcolor);
+	border-width:0;
+	color:var(--txcolor);
+}
+
+.box1 {
+  margin-left: 30px;
+}
+
+main
+{
+	margin:0;
+	background-color:var(--bgcolor);
+	border-width:0;
+	padding:1% 10%;
+	color:var(--txcolor);
+}
+
+h2 {
+  margin-top: auto;
+  margin-left: 30px;
+  /* text-align: center; */
+}
+
+p
+{
+  text-align: initial;
+	margin:inherit;
+	background-color:inherit;
+	border-width:inherit;
+	/*padding:inherit;*/
+	padding:1%;
+	color:inherit;
+}
+
+.gyoukan > p{
+  /* margin: 0 auto; */
+  text-align: center;
+  margin:20px 0px;
+}
+
+.box2 {
+  font-size:16px;
+  line-height:200%;
+}
+
+.twi > p{
+	padding-right: 40px;
+	text-align: center;
+	display: inline;
+	/* margin: auto; */
+}
