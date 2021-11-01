@@ -8,27 +8,28 @@ header .text {
 
 nav{
   text-align: center;
-  }
-  nav ul{
+}
+
+nav ul{
   margin: 10 0 0 0;
   padding: 0 ;
-  }
-  nav ul li{
+}
+nav ul li{
   list-style: none;
   display: inline-block;
   width: 18%;
   min-width: 90px;
-  }
-  nav ul li a{
+}
+nav ul li a{
   text-decoration: none;
   color: #333;
-  }
-  nav ul li.current a{
+}
+nav ul li.current a{
   color: #F33135;
-  }
-  nav ul li a:hover{
+}
+nav ul li a:hover{
   color: #0aaae9;
-  }
+}
 
 body {
   margin: 0;
@@ -52,20 +53,6 @@ h1 {
   text-align: center;
 }
 
-/* .decorator {
-  color: #008ac1;
-  font-size: 80px;
-  text-align: center;
-  font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
-  text-shadow: 10px 5px 3px rgba(0,0,0,0.3);
-} */
-
-/* figure {
-  width: 100%;
-  position: relative;
-  margin: 0;
-} */
-
 .box {
   position: relative;
 }
@@ -84,24 +71,6 @@ h1 {
 .box img {
   vertical-align: bottom;
 }
-
-/* figure img {
-  width: 100%;
-  vertical-align: top;
-} */
-
-/* figure figcaption {
-  font-size: 80px;
-  color: #ffffff;
-  position: absolute;
-  top: 0;
-  display: flex; /*横並び*/
-  /* width: 100%;
-  height: 100%;
-  margin: 0;
-  align-items: center; /*flexとset*/
-  /*justify-content: center;
-}  */
 
 .works > h1 {
   font-size: 32px;
@@ -130,28 +99,14 @@ h1 {
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
 }
 .flex .image {
-  width: 640px; /*画像サイズ指定*/
+  width: 640px; 
   margin: 0;
   padding: 0;
-}
-.flex .image img {
-  /* width: 100%; */
-  height: auto;
 }
 
-.flex .right {
-  margin: 0 0 0 20px;
-  padding: 0;
-}
-.flex .title {
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  font-size: 18px;
-}
-.flex .text {
-  margin: 10px 0 0;
-  padding: 0;
+.image img {
+  height: 200px;
+  margin-top: 5px;
 }
 
 footer {

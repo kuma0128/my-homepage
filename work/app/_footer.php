@@ -1,9 +1,4 @@
   <div class="twi">
-  <!-- <p>
-    <a href="index.php" class="home">
-      ホームへ  
-    </a>
-  </p> -->
     <a 
       href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
       class="twitter-share-button" 
@@ -17,8 +12,6 @@
 
   <footer>
     <p><a href="#" class="footer_end">先頭へ戻る</a></p>
-    <!-- <p><small>Copyright &copy; 2021 妙西 All Rights Reserved.</small></p> 
-    -->
     <p><small>Copyright &copy; 2021 妙西</small></p>
   </footer>
 

@@ -1,11 +1,10 @@
 <?php
 $title = '古典翻訳 - ';
-include('./app/_header.php');
+include('./../app/_header.php');
 ?>
-<link rel="stylesheet" href="css/dogma.css">
+<link rel="stylesheet" href=<?php echo $path . "/css/dogma.css"?>>
+
 <body>
-  <!-- <a href="index.php" >ホームへ</a> -->
-  <!-- <p>青黛山如月寺縁起を訳しました！</p> -->
   <main>
     <h1 class="title">ドグラ・マグラ訳</h1>
     <h1 class="author">夢野久作</h1>
@@ -121,4 +120,4 @@ include('./app/_header.php');
 
 <?php
 // include( __DIR__ . '/../_footer.php');
-include('./app/_footer.php');
+include('./../app/_footer.php');

@@ -15,13 +15,13 @@ include('./app/_header.php');
       <section>
         <div class="flex">
           <figure class="image">
-            <img src="img/kobun.png" width="200">
+            <img src="img/kobun.png">
           </figure>
           <div class="info">
-            <p class="title"><h1><a href="dogramagra.php">古文の現代語訳</a></h1></p>
+            <p class="title"><h1><a href="literaryhome.php">翻訳と作品紹介</a></h1></p>
             <p class="text">
-              <a href="https://www.aozora.gr.jp/cards/000096/files/2093_28841.html" target="_blank" >青黛山如月寺縁起</a>を現代語訳<br>
-              平安から昭和初期まで広く書きたいよー
+              古語を現代語訳してるよ！<br>平安から昭和初期まで広く書きたい。<br>
+              後は好きな詩を紹介したりしてる。
             </p>
           </div>
         </div>
@@ -30,7 +30,7 @@ include('./app/_header.php');
       <section>
         <div class="flex">
           <figure class="image">
-            <img src="img/program.png" width="220">
+            <img src="img/program.png">
           </figure>
           <div class="info">
             <p class="title"><h1><a href="">プログラミング雑記（準備中）</a></h1></p>
@@ -39,7 +39,7 @@ include('./app/_header.php');
         </div>
       </section>
 
-      <section>
+      <!-- <section>
         <div class="flex">
           <figure class="image">
             <img src="img/app.png" width="160">
@@ -50,27 +50,27 @@ include('./app/_header.php');
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section>
+      <!-- <section>
         <div class="flex">
           <figure class="image">
-            <img src="img/poem.jpg" width="220">
+            <img src="img/poem.jpg">
           </figure>
           <div class="info">
-            <p><h1><a href="">好きな詩紹介（準備中）</a></h1></p>
-            <p>昭和の詩が多いです。特に</p>
+            <p><h1><a href="poemhome">好きな詩紹介（準備中）</a></h1></p>
+            <p>昭和の詩が多い!</p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section>
         <div class="flex">
           <figure class="image">
-            <img src="img/day.png" width="160">
+            <img src="img/day.png">
           </figure>
           <div class="info">
-            <p><h1><a href="">日記（準備中）</a></h1></p>
+            <p><h1><a href="dayshome.php">日記（準備中）</a></h1></p>
             <p>そのままです。何か面白いことあったら書きます。</p>
           </div>
         </div>
@@ -79,7 +79,7 @@ include('./app/_header.php');
   </section>
 
   <div class="ma">
-    <h1><a href="mail.php">問い合わせ</a></h1>
+    <h1><a href="mail">問い合わせ</a></h1>
   </div>
 
   <div id="clock">

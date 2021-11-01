@@ -1,5 +1,6 @@
 <?php
 //読み込み失敗で処理を止める
+$path="http://localhost:8080";
 require(__DIR__ . '/func.php');
 
 ?>
@@ -15,8 +16,8 @@ require(__DIR__ . '/func.php');
 	<meta name="DC.Creator" content="夢野久作" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href=<?php echo $path . "/css/styles.css"?>>
+  <link rel="icon" href=<?php echo $path . "/favicon.ico"?>>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196640671-2"></script>
@@ -31,22 +32,17 @@ require(__DIR__ . '/func.php');
 
 <body>
   <header>
-  <!-- <figure> -->
     <div class="box">
-      <!-- <div class="pic"> -->
-        <img src="banner.webp" width="100%" height="200" alt="たえにしにっきのロゴです">
-      <!-- </div> -->
-      
+      <img src=<?php echo $path . "/banner.webp"?> width="100%" height="200" alt="たえにしにっきのロゴです"> 
       <div class="text">妙西日記</div>
-      <!-- <figcaption class="decorator">妙西日記</figcaption> -->
     </div>
     <nav>
-    <ul>
-      <li><a href="index.php">TOP</a></li>
-      <li><a href="dogramagra.php">LITERATURE</a></li>
-      <li><a href="code.php">PROGRAMING</a></li>
-      <li><a href="days.php">DAILY</a></li>
-      <li><a href="mail.php">CONTACT</a></li>
+      <ul>
+        <li><a href=<?php echo $path . "/index.php"?>>TOP</a></li>
+        <li><a href=<?php echo $path . "/literaryhome"?>>LITERATURE</a></li>
+        <li><a href=<?php echo $path . "/codehome"?>>PROGRAMING</a></li>
+        <li><a href=<?php echo $path . "/dayshome"?>>DAILY</a></li>
+        <li><a href=<?php echo $path . "/mail"?>>CONTACT</a></li>
       </ul>
     </nav>
   </header>
