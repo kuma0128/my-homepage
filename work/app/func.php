@@ -21,7 +21,9 @@ session_start();
   $mode = 'input';
   $errmessage = array();
   if( isset($_POST['back']) && $_POST['back'] ){
-    // 何もしない
+    $_SESSION['fullname'] = "";
+    $_SESSION['email']    = "";
+    $_SESSION['message']  = "";
   } else if( isset($_POST['confirm']) && $_POST['confirm'] ){
       // 確認画面
     if( !$_POST['fullname'] ) {
@@ -89,8 +91,9 @@ session_start();
       array_walk( $headers, function( $_val, $_key ) use ( &$header_str ) {
         $header_str .= sprintf( "%s: %s \r\n", trim( $_key ), trim( $_val ) );
       } );
-      mb_send_mail($_SESSION['email'],'お問い合わせありがとうございます',$message,"From: automata-dogma.com",$headers_str);
-      mb_send_mail('postmaster@automata-dogma.com','お問い合わせありがとうございます',$message);
+      // mb_send_mail($_SESSION['email'],'お問い合わせありがとうございます',$message,"From: automata-dogma.com",$headers_str);
+      mb_send_mail($_SESSION['email'],'お問い合わせありがとうございます',$message,"From: automata-dogma.com");
+      mb_send_mail('postmaster@automata-dogma.com','妙西ホームページから',$message);
       $_SESSION = array();
       $mode = 'send';
     }

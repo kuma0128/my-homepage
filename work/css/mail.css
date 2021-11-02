@@ -1,0 +1,58 @@
+.mailbody form {
+  width: 50%;
+  margin: 10% auto;
+  min-width: 9rem; }
+
+.mailbody input, textarea {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background: #e0e0e0;
+  color: #7a7a7a; }
+  .mailbody input[type=submit], textarea[type=submit] {
+    background: #84AD47;
+    color: #fff;
+    width: auto;
+    float: right; }
+  .mailbody input::placeholder, textarea::placeholder {
+    color: #7a7a7a; }
+  .mailbody input.error, textarea.error {
+    background: #AD4747;
+    color: #fff; }
+  .mailbody input.error::placeholder, textarea.error::placeholder {
+      color: black; }
+
+.mailbody textarea {
+  height: 10rem; }
+
+.mailbody .sendbtn{
+    width: 50%;
+    min-width: 200px;
+    max-width: 600px;
+    padding: 10px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    border: 1px solid #68779a;
+    background: #cbe8fa;
+    cursor: pointer;
+}
+
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff"); }
+.mailbody body {
+  padding: 2rem;
+  background: #f9f9f9;
+  color: #2f2f2f;
+  font-family: 'Open Sans'; }
+
+/*# sourceMappingURL=mail.css.map */

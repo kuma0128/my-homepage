@@ -14,6 +14,5 @@
     <p><a href="#" class="footer_end">先頭へ戻る</a></p>
     <p><small>Copyright &copy; 2021 妙西</small></p>
   </footer>
-
 </body>
 </html>

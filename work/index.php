@@ -92,6 +92,6 @@ include('./app/_header.php');
     <input type="text" name="q">
     <input type="submit" value="Google Search">
   </form>
-  </body>
+  
 <?php
 include('./app/_footer.php');
