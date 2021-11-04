@@ -1,7 +1,7 @@
 <?php
 session_start();
 $title = 'お問い合わせ - ';
-include('./app/_header.php');
+include('./app/_header.php');//include func.php such as mailfunc.php
 
 //クリックジャッキング対策
 header('X-FRAME-OPTIONS: SAMEORIGIN');
