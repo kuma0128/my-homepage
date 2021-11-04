@@ -5,6 +5,7 @@ let flag = false;
 
 for (let i = 0 ; i < 1 ; i++){
   const div = document.createElement('div');
+  const time_par = document.getElementById('timep');
   div.classList.add('btn');
   div.textContent = 'PUSH ME';
   
@@ -48,7 +49,8 @@ for (let i = 0 ; i < 1 ; i++){
   //       console.log('Nice job');
   //     }
   // });
-  document.body.appendChild(div);
+  // document.body.appendChild(div);
+  time_par.appendChild(div);
 }
 
 {

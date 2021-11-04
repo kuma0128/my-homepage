@@ -17,7 +17,7 @@ function h($str){
 $today = date('Y-m-d H:i:s l');
 
 //mail
-session_start();
+// session_start();
   $mode = 'input';
   $errmessage = array();
   if( isset($_POST['back']) && $_POST['back'] ){
@@ -40,7 +40,7 @@ session_start();
     } else if( !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ){
         $errmessage[] = "メールアドレスが不正です";
     }
-    $_SESSION['email']    = h($_POST['email']);
+    $_SESSION['email'] = h($_POST['email']);
 
     if( !$_POST['message'] ){
         $errmessage[] = "お問い合わせ内容を入力してください";
@@ -79,21 +79,22 @@ session_start();
         'MIME-Version' => '1.0',
         'Content-Transfer-Encoding' => '7bit',
         'Content-Type' => 'text/plain; charset=UTF-8',
-        'Return-Path' => 'postmaster@automata-dogma.com',
+        'Return-Path' => 'taenishi@automata-dogma.com',
         'From' => 'Taenishi',
         // 'Sender' => 'SenderName <from@example.com>',
-        'Reply-To' => 'postmaster@automata-dogma.com',
+        'Reply-To' => 'taenishi@automata-dogma.com',
         'Organization' => 'Taenishi.Inc',
-        'X-Sender' => 'postmaster@automata-dogma.com',
+        'X-Sender' => 'taenishi@automata-dogma.com',
         'X-Mailer' => 'Postfix/2.10.1',
         'X-Priority' => '3',
       ];
       array_walk( $headers, function( $_val, $_key ) use ( &$header_str ) {
         $header_str .= sprintf( "%s: %s \r\n", trim( $_key ), trim( $_val ) );
       } );
-      // mb_send_mail($_SESSION['email'],'お問い合わせありがとうございます',$message,"From: automata-dogma.com",$headers_str);
-      mb_send_mail($_SESSION['email'],'お問い合わせありがとうございます',$message,"From: automata-dogma.com");
-      mb_send_mail('postmaster@automata-dogma.com','妙西ホームページから',$message);
+      $headerfrom = "From: taenishi@automata-dogma.com";
+      mb_send_mail($_SESSION['email'],'お問い合わせありがとうございます',$message,$headerfrom,$headers_str);
+      // mb_send_mail($_SESSION['email'],'お問い合わせありがとうございます',$message,"From: automata-dogma.com");
+      mb_send_mail('taenishi@automata-dogma.com','妙西ホームページから',$message);
       $_SESSION = array();
       $mode = 'send';
     }

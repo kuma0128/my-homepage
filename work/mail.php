@@ -1,6 +1,16 @@
 <?php
+session_start();
 $title = 'お問い合わせ - ';
 include('./app/_header.php');
+
+//クリックジャッキング対策
+header('X-FRAME-OPTIONS: SAMEORIGIN');
+
+// トークン生成
+if (!isset($_SESSION['token'])) {
+    $_SESSION['token'] = sha1(random_bytes(30));
+}
+
 ?>
   <style>
     body{
@@ -20,13 +30,12 @@ include('./app/_header.php');
     ?>
     <div class="mailbody">
       <h1>Contact Form</h1>
-      <form action="./mail.php" method="post" id="mailform">
+      <form action="mail.php" method="post" id="mailform">
       <!-- SESSIONで入力内容をサーバーに保存 -->
         <input type="text" name="fullname" value="<?php echo $_SESSION['fullname'] ?>" placeholder="名前" required><br>
         <input type="email" name="email" value="<?php echo $_SESSION['email'] ?>" placeholder="メール" required>
         <textarea cols="40" rows="8" name="message"  placeholder="メッセージ" required><?php echo $_SESSION['message'] ?></textarea>
-        <input type="submit" name="confirm" value="確認" class="sendbtn"/>
-        <!-- <input type="submit" name="send" value="送信" /> -->
+        <input type="submit" name="confirm" value="確認" class="sendbtn">
       </form>
       <style>
         label, input[type=text]{
@@ -42,8 +51,8 @@ include('./app/_header.php');
         <input type="text" name="fullname" value="<?php echo $_SESSION['fullname'] ?>" placeholder="名前" required><br>
         <input type="email" name="email" value="<?php echo $_SESSION['email'] ?>" placeholder="メール" required>
         <textarea cols="40" rows="8" name="message"  placeholder="メッセージ" required><?php echo nl2br($_SESSION['message']) ?></textarea>
-        <input type="submit" name="back" value="戻る" class="sendbtn"/>
-        <input type="submit" name="send" value="送信" class="sendbtn"/>
+        <input type="submit" name="back" value="戻る" class="sendbtn">
+        <input type="submit" name="send" value="送信" class="sendbtn">
       </form>
     </div>
   <?php } else { ?>

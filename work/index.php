@@ -1,9 +1,8 @@
-<?php
-$title = '';
-include('./app/_header.php');
-?>
-
-  <!-- </figure> -->
+  <?php
+  $title = '';
+  include('./app/_header.php');
+  ?>
+<main>
   <p class="gree"><?= h($message) ?></p>
   
   <h1 id="target" data-translation="About Me">自己紹介</h1>
@@ -86,12 +85,9 @@ include('./app/_header.php');
     <p id="item"></p>
   </div>
 
-  <script src="js/main.js"></script>
-  
-  <form action="https://google.com/search">
-    <input type="text" name="q">
-    <input type="submit" value="Google Search">
-  </form>
+  <div id="timep">
+    <script src="js/main.js"></script>
+  </div>
   
 <?php
 include('./app/_footer.php');

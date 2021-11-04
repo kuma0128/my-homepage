@@ -113,7 +113,7 @@ footer {
   width: 100%;
   height: 30px; 
   text-align: center;
-  padding: 64px 0;
+  padding: 60px 0;
   background-color: #0e5a88;
   display: flex; /*横並び*/
   align-items: center; /*flexとset*/
@@ -128,7 +128,7 @@ form {
 .twi {
   text-align: center;
   /* display: flex; */
-  margin-bottom: 20px;
+  margin-left: 40px;
 }
 
 .btn {
@@ -160,6 +160,7 @@ form {
   width: 150px;
   border: 1.5px solid #213038;
   background: #0e5a88;
+  z-index: 5;
 }
 #item{
   /* padding: 3px; */
@@ -206,6 +207,11 @@ form {
 }
 .ma > h1:after {
   right: calc((100% - 210px)/2);
+}
+
+.box4 {
+  display: flex;
+  justify-content: center;
 }
 
 /*########################################################################################*/
