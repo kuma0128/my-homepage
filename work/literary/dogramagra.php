@@ -4,9 +4,8 @@ include('./../app/_header.php');
 ?>
 <link rel="stylesheet" href=<?php echo $path . "/css/dogma.css"?>>
 
-<body>
   <main>
-    <h1 class="title">ドグラ・マグラ訳</h1>
+    <h1 class="title">ドグラ・マグラ</h1>
     <h1 class="author">夢野久作</h1>
     <h2>青黛山如月寺縁起</h2>
     <div class="box1">
@@ -116,7 +115,7 @@ include('./../app/_header.php');
       <br>
       <br>
     </p> 
-  <!-- </main> -->
+  </main>
 
 <?php
 // include( __DIR__ . '/../_footer.php');

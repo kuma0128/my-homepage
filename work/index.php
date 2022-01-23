@@ -32,8 +32,9 @@
             <img src="img/program.png">
           </figure>
           <div class="info">
-            <p class="title"><h1><a href="">プログラミング雑記（準備中）</a></h1></p>
-            <p>数値計算からWeb開発まで　<br>半分備忘録みたいな感じかなー</p>
+            <p class="title"><h1><a href="codehome.php">プログラミング雑記</a></h1></p>
+            <p class="text">数値計算からWeb開発まで　<br>ほとんど備忘録
+            </p>
           </div>
         </div>
       </section>
@@ -41,7 +42,7 @@
       <!-- <section>
         <div class="flex">
           <figure class="image">
-            <img src="img/app.png" width="160">
+            <img src="img/app.png">
           </figure>
           <div class="info">
             <p><h1><a href="">アプリ紹介（準備中）</a></h1></p>
