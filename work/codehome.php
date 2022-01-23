@@ -97,7 +97,7 @@ include('./app/_header.php');
     </div>
     <br>
     <div class="accordion_one">
-    <div class="accordion_header">ワンライナー集<div class="i_box"><i class="one_i"></i></div></div>
+    <div class="accordion_header">bash&git<div class="i_box"><i class="one_i"></i></div></div>
     <div class="accordion_inner">
         <div class="accordion_one">
             <div class="accordion_header">xragsとパイプの違い<div class="i_box"><i class="one_i"></i></div></div>

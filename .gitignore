@@ -1,5 +1,5 @@
 # img
-.JPG
-.png
-.jpg
-.mp4
+*.JPG
+*.png
+*.jpg
+*.mp4
