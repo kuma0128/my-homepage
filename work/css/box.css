@@ -24,22 +24,22 @@
     background-color: #8fb39f;
   }
   .s_07 .accordion_one:nth-of-type(2) .accordion_header {
-    background-color: #723db3;
+    background-color: #1e90ff;
   }
   .s_07 .accordion_one:nth-of-type(2) .accordion_inner .accordion_header {
-    background-color: #8b6bb3;
+    background-color: #6495ed;
   }
   .s_07 .accordion_one:nth-of-type(2) .accordion_inner .accordion_inner  .accordion_header {
-    background-color: #9f8fb3;
+    background-color: #87cefa;
   }
   .s_07 .accordion_one:nth-of-type(3) .accordion_header {
-    background-color: #b3723d;
+    background-color: #7b68ee;
   }
   .s_07 .accordion_one:nth-of-type(3) .accordion_inner .accordion_header {
-    background-color: #ffa257;
+    background-color: #6a5acd;
   }
   .s_07 .accordion_one:nth-of-type(3) .accordion_inner .accordion_inner  .accordion_header {
-    background-color: #b39f8f;
+    background-color: #ee82ee;
   }
   .s_07 .accordion_one .accordion_header:hover {
     opacity: .8; 
