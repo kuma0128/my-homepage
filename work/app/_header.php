@@ -1,6 +1,7 @@
 <?php
 //読み込み失敗で処理を止める
 $path="http://localhost:8080";
+//$path="https://automata-dogma.com";
 require(__DIR__ . '/func.php');
 ?>
 <!DOCTYPE html>
@@ -24,6 +25,7 @@ require(__DIR__ . '/func.php');
   <link rel="stylesheet" href=<?php echo $path . "/css/box.css"?>>
   <link rel="icon" href=<?php echo $path . "/favicon.ico"?>>
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </head>
 
 <body>

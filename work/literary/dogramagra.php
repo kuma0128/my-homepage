@@ -1,12 +1,14 @@
 <?php
-$title = '古典翻訳 - ';
+$writer = '夢野久作';
+$main_title = 'ドグラ・マグラ';
+$title = $main_title.' '.$writer;
 include('./../app/_header.php');
 ?>
 <link rel="stylesheet" href=<?php echo $path . "/css/dogma.css"?>>
 
   <main>
-    <h1 class="title">ドグラ・マグラ</h1>
-    <h1 class="author">夢野久作</h1>
+    <h1 class="title"><?php echo $main_title ?></h1>
+    <h2 class="author"><?php echo $writer ?></h2>
     <h2>青黛山如月寺縁起</h2>
     <div class="box1">
       <p >（開山一行上人手記）</p>

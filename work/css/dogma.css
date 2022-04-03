@@ -47,7 +47,7 @@ h2 {
 
 p
 {
-  text-align: initial;
+  	text-align: initial;
 	margin:inherit;
 	background-color:inherit;
 	border-width:inherit;
@@ -64,7 +64,8 @@ p
 
 .box2 {
   font-size:22px;
-  line-height:200%;
+  line-height:250%;
+  margin-bottom: 2em;
 }
 
 .twi > p{
@@ -73,3 +74,176 @@ p
 	display: inline;
 	/* margin: auto; */
 }
+
+/*ソースコード表示*/
+.code{ 
+	position:relative;
+	margin-left: 0px;
+	padding:30px 0 10px 20px; /*余白：上・右・下・左*/
+	border-left: solid 10px #8fd2ed; /*左ラインの色・幅*/
+	background:#2F3437; /*背景色*/
+	color: #fff; /*文字色*/
+	font-size:1em; /*文字サイズ*/
+	overflow: auto;
+}
+.code.python:after{ /*ラベルの設定*/
+	content: 'Python'; /*ラベルに表示する文字*/
+	background: #969998; /*背景色*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 5px 10px;
+	line-height: 1;
+	font-size: 0.9em;
+	color: #fff;
+}
+.code.shell:after{ /*ラベルの設定*/
+	content: 'shell'; /*ラベルに表示する文字*/
+	background: #969998; /*背景色*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 5px 10px;
+	line-height: 1;
+	font-size: 0.9em;
+	color: #fff;
+}
+.code.bash:after{ /*ラベルの設定*/
+	content: 'bash'; /*ラベルに表示する文字*/
+	background: #969998; /*背景色*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 5px 10px;
+	line-height: 1;
+	font-size: 0.9em;
+	color: #fff;
+}
+blockquote {
+    position: relative;
+    padding: 10px 15px 10px 50px;
+    box-sizing: border-box;
+    font-style: italic;
+    border: solid 2px #464646;
+    color: #464646;
+}
+
+blockquote:before{
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    content: "\f10d";
+    font-family: FontAwesome;
+    color: #77c0c9;
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 900;
+}
+
+blockquote p {
+    padding: 0;
+    margin: 10px 0;
+    line-height: 1.7;
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    color: #888888;
+    font-size: 0.9em;
+}
+.shopBox {
+	border: 1px solid #192F60;
+	border-radius: 10px;
+	padding: 30px 15px;
+	margin: 30px 0;
+  }
+  
+  @media only screen and (min-width: 769px) {
+	.shopBox {
+	  padding: 30px;
+	  max-width: 700px;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	  .shopBox_contents{
+		  display: flex;
+		  justify-content: space-between;
+	}
+	.shopBox_img{
+	  margin-right: 30px;
+	}
+  }
+  
+  .shopBox_img a {
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+			filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  }
+  
+  .shopBox_title{
+	margin-top: 20px;
+  }
+  
+  .shopBox_title a {
+	color: #62c9c7;
+	font-size: 1.1em;
+	text-decoration: underline;
+  }
+  
+  .shopBox_title p {
+	font-size: .9em;
+	margin-top: .5em;
+  }
+  
+  .shopBox_btn_item {
+	border-radius: 10px;
+	margin-top: 15px;
+	-webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+			filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  }
+  
+  .shopBox_btn_item a {
+	padding: 7px 20px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+	.shopBox_img, .shopBox_btn_item {
+	  text-align: center;
+	}
+  }
+  
+  @media only screen and (min-width: 769px) {
+	.shopBox_btn_item {
+	  display: inline-block;
+	  margin-right: 10px;
+	  transition: .3s;
+	}
+	.shopBox_btn_item:hover{
+	  -webkit-filter:none;
+			  filter:none;
+	}
+  }
+  
+  .shopBox_btn .amazon {
+	background-color: #FF9901;
+  }
+  
+  .shopBox_btn .kindle {
+	background-color: #007dcd;
+  }
+  
+  .shopBox_btn .rakuten {
+	background-color: #c20004;
+  }
+  
+  .shopBox_btn .rakutenkobo {
+	background-color: #E32F2F;
+  }
+  
+  .shopBox_btn .other {
+	background-color: #81d8d1;
+  }
